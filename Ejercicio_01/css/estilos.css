@@ -4,3 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main section {
+    display: flex;
+}
+
+.articulo1 {
+    background-color: aqua;
+    width: 50%;
+    padding: 2rem;
+}
+
+.articulo2 {
+    background-color: firebrick;
+    width: 50%;
+    padding: 2rem;
+
+}
