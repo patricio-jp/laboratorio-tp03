@@ -5,21 +5,50 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #212121;
+body {
+    background-color: #090909;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/* ******************************* */
+/* ****** Estilos generales ****** */
+/* ******************************* */
+.flexContainer {
+    display: flex;
+}
+
+.figCaption {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.fontColor {
+    color: #ccc;
+}
+
+.links {
+    background-color: rgba(200, 200, 200, 0.1);
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.noDots {
+    list-style-type: none;
+}
+
+figure img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* Fin de estilos generales */
 
 /* *************************************** */
 /* ****** Estilos nav accesibilidad ****** */
 /* *************************************** */
 .navAccesibilidad {
-    margin-top: 0.5em;
-}
-
-.navAccesibilidad ul {
-    display: flex;
-    list-style-type: none;
+    margin: 0.5em 0;
 }
 
 .accesibilidadItem {
@@ -27,49 +56,115 @@ html {
     padding: 0.5em;
 }
 
-.accesibilidadItem a {
-    border-radius: 0.3em;
-    padding: 0.5em;
-    color: #eee;
-    text-decoration: none;
+.accesibilidadItem a:hover, .accesibilidadItem a:focus {
+    background-color: rgba(15, 78, 172, 0.5);
+    outline: 0;
+    border: 0.15em solid #fff;
 }
 
-.accesibilidadItem a:hover, .accesibilidadItem a:focus {
-    background-color: rgba(200, 200, 200, 0.2);
-    outline: 0.15em solid #fff;
-}
+/* Fin de estilos nav accesibilidad */
 
 
 /* **************************** */
 /* ****** Estilos header ****** */
 /* **************************** */
 header {
-    margin-top: 0.5rem;
-    display: flex;
     align-items: center;
+    background-color: rgba(0, 39, 97, 0.5);
 }
 
 header figure {
     width: 7rem;
+    margin: 0 1.5rem;
 }
 
-figure img {
-    width: 100%;
+/* Fin de estilos del header */
+
+/* ************************* */
+/* ****** Estilos nav ****** */
+/* ************************* */
+#navegacion {
+    margin: 0.5em 0;
 }
 
-main section {
-    display: flex;
+#navegacion ul {
+    justify-content: center;
+}
+
+.navegacionItem {
+    margin-left: 2em;
+    padding: 0.5em;
+}
+
+.navegacionItem a {
+    border-bottom: 0.21em solid rgba(15, 78, 172, 0.8);
+}
+
+.navegacionItem a:hover, .navegacionItem a:focus {
+    background-color: rgba(15, 78, 172, 0.5);
+    /* outline: 0.15em solid #fff; */
+    outline: 0;
+    border: 0.21em solid #eeeeeeff;
+}
+
+/* Fin de estilos del nav */
+
+/* ************************** */
+/* ****** Estilos main ****** */
+/* ************************** */
+.articulo1, .articulo2 {
+    width: 50%;
+    padding: 2rem;
+    margin: 1rem;
 }
 
 .articulo1 {
-    background-color: rgba(17, 122, 106, 0.5);
-    width: 50%;
-    padding: 2rem;
+    background-color: rgba(128, 26, 13, 0.5);
+    border-radius: 2em 0;
 }
 
 .articulo2 {
-    background-color: rgba(71, 122, 42, 0.5);
-    width: 50%;
-    padding: 2rem;
+    background-color: rgba(100, 128, 13, 0.3);
+    border-radius: 0 2em;
+}
 
+.imagenPrincipal {
+    width: 15rem;
+    margin-right: 1em;
+    float: left;
+}
+
+.comienzos, .fordExplorer, .villaRodrigo, .camisetaBelgrano {
+    width: 15rem;
+    float: right;
+    margin-left: 1em;
+}
+
+.noMarginTop {
+    margin-top: 0;
+}
+
+h2, h3 {
+    margin: 1em 0 0.7em;
+}
+
+p {
+    margin: 0.4em 0;
+    font-size: 1.1rem;
+}
+
+.canciones li {
+    font-size: 1.1rem;
+    margin: 0.4em;
+}
+
+/* Fin de estilos del main */
+
+/* **************************** */
+/* ****** Estilos footer ****** */
+/* **************************** */
+footer section {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 1em;
 }
