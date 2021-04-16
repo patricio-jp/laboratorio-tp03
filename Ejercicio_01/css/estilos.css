@@ -158,7 +158,69 @@ p {
     margin: 0.4em;
 }
 
+#contenido section {
+    padding: 1.5em 5em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table caption {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.7em;
+}
+
+th, td {
+    border: 0.1em solid #ccc;
+    padding: 1.5em;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(15, 78, 172, 0.5);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.albumImage {
+    width: 12em;
+    margin: 1em auto;
+}
+
+ol {
+    margin-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
 /* Fin de estilos del main */
+
+/* *************************** */
+/* ****** Estilos aside ****** */
+/* *************************** */
+aside {
+    width: 25%;
+    /* background-color: yellow; */
+}
+
+.asideSection article {
+    background-color: rgba(15, 78, 172, 0.5);
+    padding: 1em;
+    margin: 0 1em 3em;
+}
+
+.asideLinks {
+    display: block;
+    margin: 1em;
+    text-decoration: none;
+}
 
 /* **************************** */
 /* ****** Estilos footer ****** */
