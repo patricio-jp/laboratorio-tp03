@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* ******************************* */
+/* ****** Estilos generales ****** */
+/* ******************************* */
+.flexContainer {
+    display: flex;
+}
+
+.links {
+    background-color: rgba(200, 200, 200, 0.1);
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.noDots {
+    list-style-type: none;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 0.15rem solid #bbb;
+}
+
+th {
+    padding: 1rem;
+    width: 8rem;
+}
+
+td {
+    width: 5rem;
+    padding: 1rem;
+}
+
+td:hover, th:hover {
+    background-color: rgba(13, 104, 241, 0.2);
+}
