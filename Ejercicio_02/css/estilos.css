@@ -13,19 +13,46 @@
 }
 
 .links {
-    background-color: rgba(200, 200, 200, 0.1);
+    background-color: rgba(13, 104, 241, 0.2);
     border-radius: 0.3em;
     padding: 0.5em 1em;
     text-decoration: none;
+    color: #222;
 }
 
 .noDots {
     list-style-type: none;
 }
 
+/* *************************************** */
+/* ****** Estilos nav accesibilidad ****** */
+/* *************************************** */
+.navAccesibilidad {
+    margin: 0.5em 0;
+}
+
+.accesibilidadItem {
+    margin-left: 1em;
+    padding: 0.5em;
+}
+
+.accesibilidadItem a:hover, .accesibilidadItem a:focus {
+    background-color: rgb(39, 6, 160);
+    color: #ddd;
+    outline: 0;
+    border: 0.15em solid #222;
+}
+
+/* Fin de estilos nav accesibilidad */
+
+h1 {
+margin: 0.5em 1em;
+}
+
 table {
     border-collapse: collapse;
     text-align: center;
+    margin: auto;
 }
 
 th, td {
